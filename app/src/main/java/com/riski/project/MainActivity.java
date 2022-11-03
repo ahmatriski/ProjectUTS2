@@ -56,8 +56,7 @@ public class MainActivity extends AppCompatActivity {
         mlinePilGan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //hasil aksinya ditulis disini (dalam method onClick)
-                //pada kali ini hasil yang diinginkan adalah pindah activity, maka
+
 
                 //membuat objek baru dari kelas intent,
                 //dari MainActivity akan pindah ke KuisPilihaGanda
@@ -69,11 +68,9 @@ public class MainActivity extends AppCompatActivity {
         mLineEssay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //hasil aksinya ditulis disini (dalam method onClick)
-                //pada kali ini hasil yang diinginkan adalah pindah activity, maka
 
-                //membuat objek baru dari kelas intent,
-                //dari MainActivity akan pindah ke KuisEssay
+
+
                 Intent i = new Intent(MainActivity.this, KuisEssay.class);
                 startActivity(i);
             }

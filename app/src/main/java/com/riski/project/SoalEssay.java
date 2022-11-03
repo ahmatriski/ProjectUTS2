@@ -9,7 +9,7 @@ public class SoalEssay {
     };
 
     //membuat array untuk set gambar (dari String diubah jadi ImageView)
-    //pastikan yang tertulis disini sama dengan nama di drawable
+
     //lihat gambar penjelasan1
     private String image[] = {
             "soekarno",

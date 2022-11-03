@@ -34,28 +34,26 @@ public class HasilSkoring extends AppCompatActivity {
 
     //method untuk mengatur skor yang akan ditampilkan pada textview
     public void setSkor(){
-        //hasil lemparan (putExtra) dari activity sebelumnya ditampung dalam variabel lokal
+
         String activity = getIntent().getStringExtra("activity");
         String skorPilGan = getIntent().getStringExtra("skorAkhir");
         String skorEssay = getIntent().getStringExtra("skorAkhir2");
 
-        if(activity.equals("PilihanGanda")){ //jika var activity bernilai PilihanGanda
-            //dipastikan activity sebelumnya datang dari kelas KuisPilihanGanda
-            //maka skornya diatur dari skorPilGan
+        if(activity.equals("PilihanGanda")){
+            //activity KuisPilihanGanda
+            //skornya didapat dari skorPilGan
             mtvHasilAkhir.setText("SKOR : "+skorPilGan);
         }else{
-            //dipastikan activity sebelumnya datang dari kelas KuisEssay
-            //maka skornya diatur dari skorEssay
+            //activity KuisEssay
+            //skornya didapat dari skorEssay
             mtvHasilAkhir.setText("SKOR : "+skorEssay);
         }
     }
 
-    //ini adalah method bawaan dari Android Studio
-    //fungsi : memberi aksi ketika tombol back pada hp diklik
+
+    //memberi aksi ketika tombol back pada hp diklik
     public void onBackPressed(){
         Toast.makeText(this, "Tidak bisa kembali, silahkan tekan menu", Toast.LENGTH_SHORT).show();
-        //jadi yang awalnya klik tombol back maka akan kembali ke activity sebelumnya
-        //kali ini ketika tombol back diklik maka
-        //hanya muncul Toast
+
     }
 }
