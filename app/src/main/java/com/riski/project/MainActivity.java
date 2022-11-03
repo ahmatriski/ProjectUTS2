@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
 
 
-
+            //intent ke essay
                 Intent i = new Intent(MainActivity.this, KuisEssay.class);
                 startActivity(i);
             }
